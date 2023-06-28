@@ -125,9 +125,7 @@ public final class frmCargaInicial extends javax.swing.JFrame {
         getContentPane().add(lblCarga, new org.netbeans.lib.awtextra.AbsoluteConstraints(3, 400, 500, -1));
 
         jProgressBar1.setBackground(new java.awt.Color(255, 255, 255));
-        jProgressBar1.setForeground(new java.awt.Color(255, 0, 0));
-        jProgressBar1.setBorderPainted(false);
-        jProgressBar1.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jProgressBar1.setForeground(new java.awt.Color(0, 102, 102));
         jProgressBar1.setEnabled(false);
         jProgressBar1.setOpaque(true);
         jProgressBar1.setPreferredSize(new java.awt.Dimension(146, 12));
