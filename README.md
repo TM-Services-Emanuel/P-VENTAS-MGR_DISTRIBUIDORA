@@ -1,26 +1,21 @@
-# Sistema de Ferreteria en Java
-
-> **Note:** Este repositorio es público y son libres de modificarlos y/o subir sus cambios.
+# Sistema de Gestión Empresarial en Java
 
 ## Información
-El sistema cuenta con los siguientes modulos.
-- Artículos.
-- Clientes.
-- Proveedores.
-- Empleados.
-- Usuarios.
-- Facturas.
-- Notas de credito.
-- Presupuestos.
+El sistema cuenta hasta el momento con los siguientes modulos:
+- Gestión de Productos.
+- Gestión de Clientes.
+- Gestión de Proveedores.
+- Gestión de Empleados.
+- Gestión de Usuarios.
+- Gestión de Ventas y Emisión de Comprobantes Legales.
+- Gestión de Compras.
+- Liquidación de Pagos a proveedores
+- Gestión de Repartos
+- Gestión de Transferencias de Productos
+- Gestión de Egresos/Ingresos
 - Apertura de caja.
-- Cierre de caja.
-- Salidas.
+- Cierre de caja y control de valores.
+- Gestión de Salidas.
 - Reportes.
 
-## Instalación
-Pasos a seguir para la instalación del sistema.
-- Importar la base de datos "bd_ferreteria.sql" ubicada en la raiz del proyecto.
-- Descargar las librerías desde el siguiente link: [Librerias](http://adf.ly/tuoKd).
-- Importar las librerías.
-- Ejecutar el programa
-- Ingresar con siguientes credenciales: usuario: jlopez - contraseña: jotha123
+El proyecto se encuentra en constantes avances
