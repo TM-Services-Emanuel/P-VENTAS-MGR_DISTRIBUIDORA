@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DetalleVentasF" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="e115bc59-fd0f-446b-a585-04725e27d7f0">
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="bd_latino_d.xml"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MGR"/>
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
@@ -31,110 +31,119 @@ WHERE
 	<field name="id" class="java.lang.Long">
 		<property name="com.jaspersoft.studio.field.name" value="id"/>
 		<property name="com.jaspersoft.studio.field.label" value="id"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
 	</field>
 	<field name="idemision" class="java.lang.Long">
 		<property name="com.jaspersoft.studio.field.name" value="idemision"/>
 		<property name="com.jaspersoft.studio.field.label" value="idemision"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="estable" class="java.lang.String">
 		<property name="com.jaspersoft.studio.field.name" value="estable"/>
 		<property name="com.jaspersoft.studio.field.label" value="estable"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="puntoemision"/>
 	</field>
 	<field name="pexp" class="java.lang.String">
 		<property name="com.jaspersoft.studio.field.name" value="pexp"/>
 		<property name="com.jaspersoft.studio.field.label" value="pexp"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="puntoemision"/>
 	</field>
 	<field name="factura" class="java.lang.String">
 		<property name="com.jaspersoft.studio.field.name" value="factura"/>
 		<property name="com.jaspersoft.studio.field.label" value="factura"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
 	</field>
 	<field name="idtimbrado" class="java.lang.Long">
 		<property name="com.jaspersoft.studio.field.name" value="idtimbrado"/>
 		<property name="com.jaspersoft.studio.field.label" value="idtimbrado"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="timbra" class="java.lang.Integer">
 		<property name="com.jaspersoft.studio.field.name" value="timbra"/>
 		<property name="com.jaspersoft.studio.field.label" value="timbra"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timbrado"/>
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="condicion" class="java.lang.String">
 		<property name="com.jaspersoft.studio.field.name" value="condicion"/>
 		<property name="com.jaspersoft.studio.field.label" value="condicion"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="fecha" class="java.sql.Date">
 		<property name="com.jaspersoft.studio.field.name" value="fecha"/>
 		<property name="com.jaspersoft.studio.field.label" value="fecha"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="hora" class="java.lang.String">
 		<property name="com.jaspersoft.studio.field.name" value="hora"/>
 		<property name="com.jaspersoft.studio.field.label" value="hora"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="codcli" class="java.lang.Long">
 		<property name="com.jaspersoft.studio.field.name" value="codcli"/>
 		<property name="com.jaspersoft.studio.field.label" value="codcli"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="razon_social" class="java.lang.String">
 		<property name="com.jaspersoft.studio.field.name" value="razon_social"/>
 		<property name="com.jaspersoft.studio.field.label" value="razon_social"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="clientes"/>
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="ruc" class="java.lang.String">
 		<property name="com.jaspersoft.studio.field.name" value="ruc"/>
 		<property name="com.jaspersoft.studio.field.label" value="ruc"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="clientes"/>
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="totalfinal" class="java.lang.Integer">
 		<property name="com.jaspersoft.studio.field.name" value="totalfinal"/>
 		<property name="com.jaspersoft.studio.field.label" value="totalfinal"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
 	</field>
 	<field name="exenta" class="java.lang.String">
 		<property name="com.jaspersoft.studio.field.name" value="exenta"/>
 		<property name="com.jaspersoft.studio.field.label" value="exenta"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
 	</field>
 	<field name="iva5" class="java.lang.String">
 		<property name="com.jaspersoft.studio.field.name" value="iva5"/>
 		<property name="com.jaspersoft.studio.field.label" value="iva5"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="iva10" class="java.lang.String">
 		<property name="com.jaspersoft.studio.field.name" value="iva10"/>
 		<property name="com.jaspersoft.studio.field.label" value="iva10"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="nombre" class="java.lang.String">
 		<property name="com.jaspersoft.studio.field.name" value="nombre"/>
 		<property name="com.jaspersoft.studio.field.label" value="nombre"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="usuario"/>
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="estado" class="java.lang.String">
 		<property name="com.jaspersoft.studio.field.name" value="estado"/>
 		<property name="com.jaspersoft.studio.field.label" value="estado"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="v_venta_movil_informe"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ventas"/>
 		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombre_fantacia" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre_fantacia"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre_fantacia"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="clientes"/>
+	</field>
+	<field name="estado2" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="estado2"/>
+		<property name="com.jaspersoft.studio.field.label" value="estado2"/>
 	</field>
 	<variable name="cod1" class="java.lang.Integer" calculation="Count">
 		<variableExpression><![CDATA[$F{id}]]></variableExpression>
@@ -451,7 +460,7 @@ WHERE
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" size="6"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$V{diez1}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[Integer.parseInt($F{iva10})]]></textFieldExpression>
 				</textField>
 				<textField textAdjust="StretchHeight" pattern="#,##0.###;(-#,##0.###)" isBlankWhenNull="true">
 					<reportElement style="Detail" x="530" y="0" width="50" height="11" uuid="c43d0496-4552-440a-a283-2fc0027d64f8">
@@ -465,7 +474,7 @@ WHERE
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" size="6"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$V{cinco1}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[Integer.parseInt($F{iva5})]]></textFieldExpression>
 				</textField>
 				<textField textAdjust="StretchHeight" pattern="#,##0.###;(-#,##0.###)" isBlankWhenNull="true">
 					<reportElement style="Detail" x="580" y="0" width="50" height="11" uuid="8150e917-68b2-4aa5-a6ac-ad1c35435b71">
@@ -479,7 +488,7 @@ WHERE
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" size="6"/>
 					</textElement>
-					<textFieldExpression><![CDATA[$V{exenta1}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[Integer.parseInt($F{exenta})]]></textFieldExpression>
 				</textField>
 				<textField textAdjust="StretchHeight" pattern="#,##0.###;#,##0.###-" isBlankWhenNull="true">
 					<reportElement style="Detail" x="630" y="0" width="50" height="11" uuid="9960c472-23f9-48c2-a72b-9368b2827602">

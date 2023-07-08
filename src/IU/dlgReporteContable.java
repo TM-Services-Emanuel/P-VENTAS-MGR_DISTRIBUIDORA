@@ -433,7 +433,6 @@ public class dlgReporteContable extends javax.swing.JDialog {
 
     private void btnGenerarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarActionPerformed
         // TODO add your handling code here:
-
         SimpleDateFormat myFecha = new SimpleDateFormat("yyyy/MM/dd");
         Date desde = null;
         Date hasta = null;
@@ -452,8 +451,9 @@ public class dlgReporteContable extends javax.swing.JDialog {
         } else {
             CabecerasTablas.limpiarTablasCV(tbCV);
             controlFactura.listFacturasMovilContabilidad(tbCV, txtFDesdeR.getText().trim(), txtFHastaR.getText().trim());
-            Cant();
+            //Cant();
         }
+        Cant();
 
     }//GEN-LAST:event_btnGenerarActionPerformed
 

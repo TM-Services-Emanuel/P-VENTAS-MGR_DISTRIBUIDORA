@@ -11,6 +11,7 @@
 	cod_barra,
 	producto,
 	SUM( v_rep_vepprod.cant) AS cant,
+	SUM( v_rep_vepprod.camtF) AS cantF,
 	um,
 	idemision,
 	idtimbrado,
@@ -48,6 +49,10 @@ ORDER BY v_rep_vepprod.idemision ASC,
 	<field name="cant" class="java.lang.Double">
 		<property name="com.jaspersoft.studio.field.name" value="cant"/>
 		<property name="com.jaspersoft.studio.field.label" value="cant"/>
+	</field>
+	<field name="cantF" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="cantF"/>
+		<property name="com.jaspersoft.studio.field.label" value="cantF"/>
 	</field>
 	<field name="um" class="java.lang.String">
 		<property name="com.jaspersoft.studio.field.name" value="um"/>
@@ -179,24 +184,14 @@ ORDER BY v_rep_vepprod.idemision ASC,
 					<text><![CDATA[DESCRIPCIÓN DEL PRODUCTO]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="732" y="0" width="69" height="14" forecolor="#000000" backcolor="#000000" uuid="8d5a8948-ca45-4668-b9aa-07449a50bf1d">
+					<reportElement x="670" y="0" width="131" height="14" forecolor="#000000" backcolor="#000000" uuid="9f30b3a3-9393-4ade-8840-bcfb51dbb721">
 						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6580fff9-2bab-4cae-af9a-8041c1e02144"/>
 						<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					</reportElement>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial" size="10" isBold="true"/>
 					</textElement>
-					<text><![CDATA[U.M.]]></text>
-				</staticText>
-				<staticText>
-					<reportElement x="670" y="0" width="62" height="14" forecolor="#000000" backcolor="#000000" uuid="9f30b3a3-9393-4ade-8840-bcfb51dbb721">
-						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6580fff9-2bab-4cae-af9a-8041c1e02144"/>
-						<property name="com.jaspersoft.studio.unit.height" value="px"/>
-					</reportElement>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font fontName="Arial" size="10" isBold="true"/>
-					</textElement>
-					<text><![CDATA[CANTIDAD]]></text>
+					<text><![CDATA[CONTEO POR UNIDAD]]></text>
 				</staticText>
 			</frame>
 		</band>
@@ -223,23 +218,14 @@ ORDER BY v_rep_vepprod.idemision ASC,
 				<textFieldExpression><![CDATA[$F{producto}]]></textFieldExpression>
 			</textField>
 			<textField pattern="#,##0.###;(-#,##0.###)" isBlankWhenNull="true">
-				<reportElement x="670" y="0" width="62" height="11" uuid="6538dfbc-6ee4-4019-a58e-1e8c2776352c">
+				<reportElement x="670" y="0" width="131" height="11" uuid="6538dfbc-6ee4-4019-a58e-1e8c2776352c">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6e85925a-fd02-44d9-9cc0-a2da79906933"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{cant}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="732" y="0" width="69" height="11" uuid="4e49b877-7dad-4b04-a0fa-e8f59d438c45">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="90bc0a2e-f11e-436d-b31c-ebc7fb7c72d9"/>
-				</reportElement>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="9"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{um}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{cantF}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
